@@ -2,8 +2,8 @@
  * @Array.slice(start, end) 源码实现
  * */
 // eslint-disable-next-line no-extend-native
-Array.prototype.mySlice = function (start, end) {
-  if (!Array.isArray(this)) {
+export default Array.prototype.mySlice = function (start, end) {
+  if (!this.length) {
     throw new TypeError('not array')
   }
   let result = []
