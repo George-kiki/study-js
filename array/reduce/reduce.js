@@ -18,3 +18,32 @@
 
 let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 let b = arr.reduce((a, b) => a.concat(b), []) // [1,2,3,4,5,6,7,8,9]
+
+/**
+ * leetCode题目
+ * 给定一副牌，每张牌上都写着一个整数。
+ *
+ *  此时，你需要选定一个数字 X，使我们可以将整副牌按下述规则分成 1 组或更多组：
+ *  每组都有X张牌。
+ *  组内所有的牌上都写着相同的整数。
+ *  仅当你可选的 X >= 2 时返回true
+ * */
+
+let deckCard = [1, 2, 3, 4, 5, 5, 4, 3, 2, 1, 1]
+
+let hasGroupsSizeX = (deck) => {
+  const gcd = (...arr) => { // 利用reduce加递归 做余运算
+    let _gcd = (x, y) => !y ? x : gcd(y, x % y)
+    // [3, 2, 2, 2, 2]
+    return [...arr].reduce((x, y) => {
+      return _gcd(x, y)
+    })
+  }
+  let obj = Object.create(null)
+  deck.forEach(v => {
+    obj[v] ? obj[v]++ : obj[v] = 1
+  })
+  let arr = Object.values(obj)
+  return gcd(...arr) !== 1
+}
+console.log(hasGroupsSizeX(deckCard))
