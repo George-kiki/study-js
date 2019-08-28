@@ -2,7 +2,7 @@
  * Array.some(fn) 源码实现
  * */
 // eslint-disable-next-line no-extend-native
-Array.prototype.mySome = function (fn) {
+export default Array.prototype.mySome = function (fn) {
   let flag = false
   if (!this.length) return flag
   for (let i = 0; i < this.length; i++) {
