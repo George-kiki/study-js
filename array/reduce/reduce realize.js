@@ -3,7 +3,7 @@
  * */
 
 // eslint-disable-next-line no-extend-native
-Array.prototype.myReduce = function (fn, init) {
+export default Array.prototype.myReduce = function (fn, init) {
   let pre = init
   let i = 0
   if (!init) {
