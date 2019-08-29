@@ -7,7 +7,7 @@
 ``` bash
 $ git clone https://github.com/George-kiki/JavaScript-Base.git
 ```
-##Then you need to install dependency package
+## Then you need to install dependency package
 ``` bash
 $ npm install
 ```
