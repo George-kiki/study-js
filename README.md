@@ -1,4 +1,4 @@
-# JavaScript-Base
+# study-js
 
 
 完成JS部分数组的方法使用以及实现代码并通过了jest测试
