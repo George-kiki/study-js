@@ -7,7 +7,10 @@
 ``` bash
 $ git clone https://github.com/George-kiki/JavaScript-Base.git
 ```
-
+##Then you need to install dependency package
+``` bash
+$ npm install
+```
 
 ### 使用jest测试做单元测试
 Jest test preject `npm`:
