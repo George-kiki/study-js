@@ -3,7 +3,7 @@
  * */
 
 // eslint-disable-next-line no-extend-native
-Array.prototype.myEvery = function (fn) {
+export default Array.prototype.myEvery = function (fn) {
   let flag = true
   if (!this.length) return flag
   for (let i = 0; i < this.length; i++) {
