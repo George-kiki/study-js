@@ -1,4 +1,4 @@
-import splice from '../../array/splice/splice'
+import splice from '../../../array/splice/splice'
 
 describe('splice', () => {
   test('splice', () => {

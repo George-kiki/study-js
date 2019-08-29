@@ -1,4 +1,4 @@
-import mySome from '../../array/some/some realize'
+import mySome from '../../../array/some/some realize'
 describe('some', () => {
   test('some-1', () => {
     let arr = [1, 2, 3]
